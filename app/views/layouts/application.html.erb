@@ -39,7 +39,12 @@ nav {
     margin-left: 3px;
     margin-right:3px;
 }
-
+.footer{
+  background-color: black;
+}
+.text-white{
+  color: white;
+}
     </style>
 
        
@@ -48,19 +53,9 @@ nav {
       
    <body>   
    <header>
-   <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            
-
-          </div>
-        </div>
-      
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-warning" href="">Category</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -79,24 +74,50 @@ nav {
          
         </div>
       </nav>
-      </div>
+
    </header>
 
    <section class="jumbotron text-center">
       
     <div class="container" >
       <h1 class="jumbotron-heading text-white">Jorah Entertainment</h1>
-      <h2 class="text-center text-white">Rwanda first online Movie store </h2>
-      <p class=" text-white"> Stream, Download, And buy Movie you like Actian, love story, and Animation for kids.</p>
-      <p>
-        <a href="#" class="btn bg-dark my-2 text-warning">Add To Cart</a>
+      <h2 class="text-center text-dark">Rwanda first online Movie store </h2>
+      <p class=" text-dark"> Stream, Download, And buy Movie you like Actian, love story, and Animation for kids.</p>
       
-      </p>
     </div>
   </section>
 
       <div>   
          <%= yield %>   
-      </div>   
+      </div>  
+    
+
+    <footer class="footer mt-auto py-3 bg-dark">
+  <div class="container">
+  
+      <div class="row">
+        <div class="col-sm-8 col-md-5 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-white">Jorah Entetainment is Rwandan entertainment Company located in Nyarugenge Campus  where you can Stream, Download, and buy Different kind of Movie.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email us: jorahentatainmnet@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-8 col-md-2 py-4" >
+           <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+        </div>
+      </div>
+    </div>
+ 
+</footer>
+
+
    </body>   
 </html>  
